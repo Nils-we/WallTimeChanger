@@ -40,7 +40,7 @@ This is how to name directorys in the wallpaper (/.walls) directory:\n
 	   for t -2: day, night
 	   for t -3: day, evening, night
 	   for t -4: morning, day, evening, night
-Please be sure it is exactly spelled like above. Otherwise it will not work.
+Please be sure the directories are exactly spelled like above. Otherwise it will not work.
 
 '''
 
