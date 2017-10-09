@@ -7,7 +7,7 @@ All this is based on [WeatherDesk](https://github.com/bharadwaj-raju/WeatherDesk
 
 - Clone the repository to your wanted destination
 - Install Python 3 or higher
-- Create the `.walls` directory in ~/USER/ and the subdirectories according to your preferences, see [Wallpapers] (#Wallpapers)
+- Create the `.walls` directory in ~/USER/ and the subdirectories according to your preferences, see [Wallpapers](#wallpapers)
 - After that just run `WallTimeChanger.py`
 
 
