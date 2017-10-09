@@ -63,7 +63,7 @@ arg_parser.add_argument(
 
 arg_parser.add_argument(
 	'-w', '--wait', metavar='seconds', type=int,
-	help='Specify time (in seconds) to wait before updating. Default: 600',
+	help='Specify time (in seconds) to wait before updating. Default: 1200',
 	required=False)
 
 arg_parser.add_argument(
@@ -84,6 +84,11 @@ arg_parser.add_argument(
 arg_parser.add_argument(
 	'-o', '--one-time-run', action='store_true',
 	help='Run once, then exit.',
+	required=False)
+
+arg_parser.add_argument(
+	'-r', '--random', action='store_true',
+	help='Choose random image from directory.',
 	required=False)
 
 args = arg_parser.parse_args()
@@ -123,7 +128,7 @@ else:
 
 	file_format = '.jpg'
 
-wait_time = args.wait or 600  # ten minutes
+wait_time = args.wait or 1200  # ten minutes
 
 if args.naming:
 
@@ -196,16 +201,20 @@ def get_time_of_day(level=4):
 			return 'day'
 
 		else:
-)
+
 			return 'night'
 
 def get_file_name():
 	image_list = [f for f in listdir(walls_dir + '/' + get_time_of_day(args.time)) if isfile(join(walls_dir + '/' + get_time_of_day(args.time), f))]
 
-	image = random.choice(image_list)
 
-
-	return image
+	if args.random:
+		image = random.choice(image_list)
+		return image
+	else:
+		size=len(image_list)
+		image=image_list[datetime.datetime.now().time().hour%size]
+		return image
 
 
 def check_if_all_files_exist(level=4):
