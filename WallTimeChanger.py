@@ -160,50 +160,50 @@ def get_time_of_day(level=4):
 	if level == 3:
 
 		if current_time.hour in range(6, 17):
-			print('day3')
+
 			return 'day'
 
 		elif current_time.hour in range(17, 20):
-			print('evening3')
+
 			return 'evening'
 
 		else:
-			print('night3')
+
 			return 'night'
 
 	elif level == 4:
 
 		if current_time.hour in range(6, 8):
-			print('morning4')
+
 			return 'morning'
 
 		elif current_time.hour in range(8, 17):
-			print('day4')
+
 			return 'day'
 
 		elif current_time.hour in range(17, 20):
-			print('evening4')
+
 			return 'evening'
 
 		else:
-			print('night4')
+
 			return 'night'
 
 	else:
 
 		if current_time.hour in range(6, 20):
-			print('day2')
+
 			return 'day'
 
 		else:
-			print('night2')
+)
 			return 'night'
 
 def get_file_name():
 	image_list = [f for f in listdir(walls_dir + '/' + get_time_of_day(args.time)) if isfile(join(walls_dir + '/' + get_time_of_day(args.time), f))]
 
 	image = random.choice(image_list)
-	print(image)
+
 
 	return image
 
