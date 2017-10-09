@@ -7,7 +7,7 @@ All this is based on [WeatherDesk](https://github.com/bharadwaj-raju/WeatherDesk
 
 - Clone the repository to your wanted destination
 - Install Python 3 or higher
-- create the `.walls` folder in /USER/ and the subfolders according to your preferences, see [Wallpapers] (#wallpapers)
+- Create the `.walls` directory in ~/USER/ and the subdirectories according to your preferences, see [Wallpapers] (#wallpapers)
 - After that just run `WallTimeChanger.py`
 
 
@@ -28,7 +28,7 @@ All this is based on [WeatherDesk](https://github.com/bharadwaj-raju/WeatherDesk
     -w seconds, --wait seconds
                         Specify time (in seconds) to wait before updating. Default: 600
     -t [{2,3,4}], --time [{2,3,4}]
-                        Use different backgrounds for different times.
+                        Choose the amount of categories.
                         
                         Variations:
                           2 = day/night
