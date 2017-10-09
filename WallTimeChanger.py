@@ -196,13 +196,14 @@ def get_time_of_day(level=4):
 			return 'day'
 
 		else:
-
+)
 			return 'night'
 
 def get_file_name():
 	image_list = [f for f in listdir(walls_dir + '/' + get_time_of_day(args.time)) if isfile(join(walls_dir + '/' + get_time_of_day(args.time), f))]
 
 	image = random.choice(image_list)
+
 
 	return image
 
@@ -263,6 +264,7 @@ def main():
 
 	Desktop.set_wallpaper(
 		os.path.join(walls_dir + '/' + get_time_of_day(args.time), get_file_name()))
+
 
 
 # Main loop
