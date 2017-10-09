@@ -74,7 +74,7 @@ Variations:
   3 = day/evening/night
   4 = morning/day/evening/night [Default]
 See --naming.''',
-	type=int, choices=[2, 3, 4], const=4, required=False)
+	type=int, choices=[2, 3, 4], const=3, default=4, required=False)
 
 arg_parser.add_argument(
 	'-n', '--naming', action='store_true',
@@ -155,7 +155,7 @@ def get_time_of_day(level=4):
 	20 to 06: night
 	'''
 
-	current_time = datetime.datetime.now()
+	current_time = datetime.datetime.now().time()
 
 	if level == 3:
 
