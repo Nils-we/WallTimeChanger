@@ -36,10 +36,10 @@ from os import listdir
 from os.path import isfile, join
 
 NAMING_RULES = '''
-This is how to name directorys in the wallpaper (/.walls) directory:\n
+This is how to name directories in the wallpaper (/.walls) directory:\n
 	   for t -2: day, night
 	   for t -3: day, evening, night
-	   for t -4: morning, day, evening, night
+	   for t -4: morning, day, evening, night (this is the default setting)
 Please be sure the directories are exactly spelled like above. Otherwise it will not work.
 
 '''
@@ -68,7 +68,7 @@ arg_parser.add_argument(
 
 arg_parser.add_argument(
 	'-t', '--time', nargs='?',
-	help='''Use different backgrounds for different times.\n
+	help='''Choose the amount of categories.\n
 Variations:
   2 = day/night
   3 = day/evening/night
