@@ -41,8 +41,8 @@ All this is based on [WeatherDesk](https://github.com/bharadwaj-raju/WeatherDesk
 
 ## Wallpapers
 
-**You can choose your own custom set**, conforming to the [naming rules](#naming-of-pictures).
-Either put them in the default `~/.walls/` directory or specify a directory with the `--dir` option.
+**Use the pictures of your choice**, you just have to use the [naming rules](#naming-of-pictures). 
+You can put them in the default directory `~/.walls/` or you specify a directory with the `--dir` option.
 
 ### Naming of Pictures
 
@@ -96,14 +96,6 @@ Run
 $ nohup python3 WeatherDesk.py > /dev/null &
 ```
 
-## Note for OS X users
+## Run on Startup (for Example Ubuntu based Linux)
 
-Please disable the auto-reset/change of wallpaper in the  "Desktop and Screen Saver" preferences.
-
-[![Disable this](http://i.imgur.com/BFi1GHGm.png)](http://i.imgur.com/BFi1GHG.png)
-
-## Note for KDE users
-
-Since KDE 4 and above does not provide an interface to change the desktop background, KDE 4 and above is not supported.
-
-Any contributions on this welcome.
+Use the 'Startup application' and choose add command. Now you have to choose the 'WallTimeChanger.py'. 
